@@ -1,1 +1,23 @@
-// TODO
+.container {
+  height: 6.5rem;
+  background-color: var(--background);
+
+  div {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+
+    a {
+      height: 6.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      width: 721px;
+      margin: 0 auto;
+    }
+  }
+}
