@@ -44,12 +44,10 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
 
     const newPost = formateResultsPosts(nextPost.results);
 
-    setPosts(prevState => {
-      return {
-        next_page: nextPost.next_page,
-        results: [...prevState.results, ...newPost],
-      };
-    });
+    setPosts(prevState => ({
+      next_page: nextPost.next_page,
+      results: [...prevState.results, ...newPost],
+    }));
   }
 
   return (

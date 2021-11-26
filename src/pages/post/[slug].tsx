@@ -79,7 +79,7 @@ export default function Post({ post }: PostProps): JSX.Element {
               </span>
             </div>
 
-            {post.data.content.map((postContent, index) => {
+            {post.data.content.map(postContent => {
               return (
                 <div className={styles.postBody} key={postContent.heading}>
                   <h2>{postContent.heading}</h2>
