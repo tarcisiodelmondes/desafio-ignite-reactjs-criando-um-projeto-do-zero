@@ -22,7 +22,7 @@
 
 ## Demonstração da aplicação
 
-Acesse: <https://61a0d931dda6d2005df1ea88--vigilant-stonebraker-eb6ea0.netlify.app/> [![Netlify Status](https://api.netlify.com/api/v1/badges/f39b83cc-921b-46f7-890c-a81dfe4f5cee/deploy-status)](https://app.netlify.com/sites/nostalgic-minsky-7ab767/deploys)
+Acesse: <https://61a0da80a2e5590088787e89--vigilant-stonebraker-eb6ea0.netlify.app/> [![Netlify Status](https://api.netlify.com/api/v1/badges/f39b83cc-921b-46f7-890c-a81dfe4f5cee/deploy-status)](https://app.netlify.com/sites/nostalgic-minsky-7ab767/deploys)
 
 ## Pré-requisitos
 
