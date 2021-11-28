@@ -7,10 +7,10 @@ import { RichText } from 'prismic-dom';
 import Prismic from '@prismicio/client';
 import { FiCalendar, FiClock, FiUser } from 'react-icons/fi';
 import { PreviewResponse } from '@prismicio/client/types/ResolvedApi';
+import Link from 'next/link';
 import Header from '../../components/Header';
 
 import { useUpdatePreview } from '../../utils/useUpdatePreviewRef';
-
 import { getPrismicClient } from '../../services/prismic';
 
 import commonStyles from '../../styles/common.module.scss';
@@ -140,19 +140,23 @@ export default function Post({
       <footer className={`${styles.footer} ${commonStyles.wd_700_center}`}>
         <div className={styles.afterAndBeforePost}>
           {beforePost ? (
-            <a href={`/post/${beforePost.uid}`}>
-              <p>{beforePost.title}</p>
+            <Link href={`/post/${beforePost.uid}`}>
+              <a>
+                <p>{beforePost.title}</p>
 
-              <span>Post anterior</span>
-            </a>
+                <span>Post anterior</span>
+              </a>
+            </Link>
           ) : null}
 
           {afterPost ? (
-            <a href={`/post/${afterPost.uid}`}>
-              <p> {afterPost.title}</p>
+            <Link href={`/post/${afterPost.uid}`}>
+              <a>
+                <p> {afterPost.title}</p>
 
-              <span>Próximo post</span>
-            </a>
+                <span>Próximo post</span>
+              </a>
+            </Link>
           ) : null}
         </div>
 
