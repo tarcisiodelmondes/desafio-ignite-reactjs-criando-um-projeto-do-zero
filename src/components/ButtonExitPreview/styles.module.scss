@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.625rem;
+
+  background-color: var(--heading);
+  border-radius: 4px;
+  color: var(--background);
+  font-weight: 600;
+}
