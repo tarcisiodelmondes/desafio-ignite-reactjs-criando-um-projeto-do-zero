@@ -39,6 +39,13 @@
     }
   }
 
+  .edit {
+    margin-top: 1.125rem;
+    color: var(--body);
+    font-size: 0.875rem;
+    font-style: italic;
+  }
+
   .postBody {
     margin-top: 4rem;
 
@@ -62,5 +69,44 @@
     a {
       color: var(--highlight);
     }
+  }
+}
+
+.footer {
+  margin-top: 3.75rem;
+  border-top: 1px solid rgba(215, 215, 215, 0.1);
+
+  .afterAndBeforePost {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+
+    a {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.125rem;
+      }
+
+      span {
+        margin-top: 0.5rem;
+        font-weight: 600;
+        color: var(--highlight);
+      }
+
+      & + a {
+        text-align: right;
+      }
+    }
+  }
+
+  aside {
+    margin-top: 5rem;
   }
 }
